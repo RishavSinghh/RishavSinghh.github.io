@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        h1 {
-            text-align: center;
-        }
+      body {
+        background-image: url("images/background.jpg");
+        /* Center and scale the image nicely */
 
-        h4 {
-            text-align: center;
-        }
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1920px 1280px;
+        /*The Fonts*/
+        font-family: "Montserrat", sans-serif;
+        color: azure;
+      }
+      h1 {
+        position: relative;
+        top: 200px;
+        font-size: 100px;
+        font-style: bold;
+      }
+      h2 {
+        position: relative;
+        top: 250px;
+        font-size: 50px;
+        font-style: italic;
+      }
+      h4 {
+        position: relative;
+        top: 250px;
+        font-size: 20px;
+        font-style: italic;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <h1>Hi,</h1>
-    <h4>This page will be live soon!</h4>
-</body>
-
+  <body>
+    <div class="container-fluid">
+      <div class="col-md-12">
+        <div class="row">
+          <h1>Hello World!</h1>
+        </div>
+        <div class="row">
+          <h2>This website is coming soon to a browser near you!</h2>
+        </div>
+        <div class="row">
+          <h4>~by Rishav Singh</h4>
+        </div>
+      </div>
+    </div>
+    <!-- JavaScript Below-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
