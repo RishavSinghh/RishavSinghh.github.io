@@ -49,6 +49,10 @@ p {
   background-color: #fff;
 }
 
+.black-section{
+  background-color: black;
+}
+
 /* Navigation Bar */
 
 .navbar {
