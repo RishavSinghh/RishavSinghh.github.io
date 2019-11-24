@@ -4,65 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Homepage</title>
+    <title>Rishav Singh - a developer & programmer</title>
+
+    <!-- CSS Stylesheets -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        background-image: url("images/background.jpg");
-        /* Center and scale the image nicely */
+    <link rel="stylesheet" href="css/styles.css">
 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 1920px 1280px;
-        /*The Fonts*/
-        font-family: "Montserrat", sans-serif;
-        color: azure;
-      }
-      h1 {
-        position: relative;
-        top: 200px;
-        font-size: 100px;
-        font-style: bold;
-      }
-      h2 {
-        position: relative;
-        top: 250px;
-        font-size: 50px;
-        font-style: italic;
-      }
-      h4 {
-        position: relative;
-        top: 250px;
-        font-size: 20px;
-        font-style: italic;
-      }
-    </style>
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container-fluid">
-      <div class="col-md-12">
+    <section class="colored-section" id="title">
+
+      <div class="container-fluid">
+  
+        <!-- Nav Bar -->
+  
+        <nav class="navbar navbar-expand-lg navbar-dark">
+  
+              <!-- <img src="images/Profile.png" style="width: 10%; height: 10%; border-radius: 100%" alt=""> -->
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="font-family: Open Sans, sans-serif; color: #fff;">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="notes.html" style="font-family: Open Sans, sans-serif; color: #fff;">notes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html" style="font-family: Open Sans, sans-serif; color: #fff;">projects</a>
+              </li>
+            </ul>
+  
+          </div>
+        </nav>
+  
+  
+        <!-- Title -->
+  
         <div class="row">
-          <h1>Hello World!</h1>
+  
+          <div class="col-lg-6">
+            <h1 class="big-heading" style="font-family: Great Vibes, cursive;">I'm Rishav.</h1>
+            <h2 class="title-h2-heading" style="font-family: Open Sans, sans-serif;">a web & app developer</h2><br/><br/><br/><br/>
+          </div>
+  
+          <div class="col-lg-6">
+            <img class="title-image" src="images/appdev-removebg-preview.png" alt="app-development-mockup">
+          </div>
+  
         </div>
-        <div class="row">
-          <h2>This website is coming soon to a browser near you!</h2>
-          <h2>This website is being test by Github...!</h2>
-        </div>
-        <div class="row">
-          <h4>~by Rishav Singh</h4>
-        </div>
+  
       </div>
-    </div>
+  
+    </section>
+
+    <!-- Hi Section -->
+
+    <section class="white-section" id="features">
+
+        <div class="container-fluid">
+
+            <div class="feature-box col-lg-12">
+              <img src="images/Profile.png" style="width: 30%; height: 30%; border-radius: 100%" alt="profile icon">
+              <h3 class="feature-title" style="font-family: Ubuntu, sans-serif; text-align: center;">Hi.</h3>
+              <p style="font-family: Open Sans, sans-serif; text-align: center;">I'm a web and mobile app developer based in Kolkata, West Bengal, India. I have a passion for programming
+                and i love developing web apps and mobile apps.
+              </p>
+            </div>
+  
+        </div>
+      </section>
+
+
     <!-- JavaScript Below-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
