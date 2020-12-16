@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
+  background-color: #121212;
+  color: #b0bec5;
 }
 
 /* --------------------------- Title Section Starts Below ------------------------ */
@@ -59,4 +61,8 @@ Font Awesome Icon Color change...
   text-align: center;
   width: 100%;
   height: 400px;
+}
+
+#udc{
+  text-align: center;
 }
