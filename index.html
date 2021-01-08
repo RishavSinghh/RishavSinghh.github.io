@@ -1,57 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Rishav Singh - a developer & programmer</title>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-  <!-- CSS Stylesheets -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta name="description" content="Portfolio website of Rishav Singh.">
+    <title>Rishav Singh</title>
 
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!-- CSS for Favicon file -->
+    <link rel="shortcut icon" type="image/ico" href="assets/img/icons/emoji_favicon.ico">
 
-  <!-- Google Fonts -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- My Own CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- Font-Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS for Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Self-Hosted JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
-
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-lg-4">
-      </div>
-      <div class="col-md-4 col-lg-4">
-        <h1 style="text-align: right; margin-top: 20px;">rishavsinghh.github.io</h1>
-        <img src="images/udc3.png" align="center" alt="Website Under Construction">
-      </div>
-      <div class="col-md-4 col-lg-4">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-lg-4"></div>
-      <div class="col-md-4 col-lg-4">
-        <h3 style="text-align: center;">Thank You for visiting!</h3><br/>
-        <h4 style="text-align: center;">We will be here soon.</h4>
-      </div>
-      <div class="col-md-4 col-lg-4"></div>
-    </div>
-  </div>
+    <!-- ||||||||||||||||||||| NAVIGATION BAR SECTION FROM HERE |||||||||||||||||||| -->
+    <nav id="navigation" class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand" href="#"><div id="brand_logo"><img id="img_under_brand_logo" src="assets/img/icons/emoji_favicon.ico" alt="navbar favicon"></div></a>
 
-    <!-- JavaScript Below-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto" role="tablist">
+            <li class="nav-item active">
+              <a class="nav-link" href="#introduction"><i id="my-font-awesome-icon" class="fa fa-home" aria-hidden="false"></i>  Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i id="my-font-awesome-icon" class="fa fa-info-circle" aria-hidden="true"></i> About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#education"><i id="my-font-awesome-icon-pencil" class="fa fa-pencil" aria-hidden="true"></i>Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><i id="my-font-awesome-icon-wrench" class="fa fa-wrench" aria-hidden="true"></i>Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i id="my-font-awesome-icon-phone" class="fa fa-phone" aria-hidden="true"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- ########################################################################### -->
+
+    <!-- ||||||||||||||||||||| INTRODUCTION SECTION FROM HERE |||||||||||||||||||| -->
+    <div id="introduction" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 id="introduction_header">RISHAV SINGH</h1>
+                    <h2 id="introduction_h2">I'm a <span id="introduction_h2_span">full-stack</span> developer</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <img id="emoji_id" src="assets/img/emoji-circle.png" class="rounded mx-auto d-block" alt="Rishav's emoji">
+                    <br>
+                </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-justify">
+                    <p id="introduction_welcome_message">
+                        Welcome to my portfolio.<br/>
+                        I'm a full-stack developer with IT background.
+                        In other words, I went to study BCA & MCA in college.
+                    </p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- INTRODUCTION SECTION TILL HERE -->
+    <!-- ########################################################################### -->
+
+    <!-- ||||||||||||||||||||||| ABOUT SECTION begins here ||||||||||||||||||||| -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="about_header">About me</h1>
+                    <hr class="heading_underline" size="10" width="12%" color="#e74c3c">
+                    <br/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="aboutImage" src="assets/img/dev-rishav-01.jpg" alt="Rishav's Image">
+                </div>
+                <div class="col-md-7">
+                    <h1 style="color: orangered;">नमस्ते (Namaste)</h1>
+                    <h1 id="h1_under_about_section" >I am Rishav Singh</h1><br/>
+                    <p class="paragraph_under_about" >I am <b>Full-Stack Web Developer</b> based out of<b> Kolkata, India</b>.</p>
+                    <p class="paragraph_under_about">I am more focused on the back-end development compared to front-end development.
+                        I like to use technologies like <b>Node Js</b> and <b>Flask</b> to create the back-end of my web applications.
+                    </p>
+                    <p class="paragraph_under_about">
+                        I have obtained a <b>Bachelor</b> & <b>Master</b> degree in <b>Computer Applications</b> from
+                        a reputed national university. Learning is a big part of my life and I always
+                        tend to keep learning new technologies.
+                    </p>
+                    <p class="paragraph_under_about">
+                        I also like to solve challenges based
+                        on programming languages, so I also spend my time solving puzzles and challenges on <b>HackerRank</b>.<br/>
+                        I love reading books as well.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ########################## END OF ABOUT SECTION ######################## -->
+
+
+    <!-- ||||||||||||||||||||||| EDUCATION SECTION begins here ||||||||||||||||||||| -->
+
+    <div id="education" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="about_header">Education</h1>
+                    <hr class="heading_underline" size="10" width="12%" color="#e74c3c">
+                    <br/>
+                </div>
+                <div class="col-md-6">
+                    <ul class="timeline">
+                        <li>
+                            <h4 id="timeline_date" class="float-left">Passed 10th Std from ICSE.</h4><br/><br/>
+                            <h6>2011</h6>
+                            <p>Passed Class 10 from ICSE board in english medium in the year 2011.</p>
+                        </li>
+                        <li>
+                            <h4 id="timeline_date" class="float-left">Passed 12th Std from CBSE.</h4><br/><br/>
+                            <h6>2013</h6>
+                            <p>Passed Class 12 in Science Stream from CBSE board in english medium in the year 2013.</p>
+                        </li>
+                        <li>
+                            <h4 id="timeline_date" class="float-left">Diploma in Software Engineering.</h4><br/><br/>
+                            <h6>2014 - 2015</h6>
+                            <p>Obtained Advanced Diploma in Software Engineering from <b>Brainware Institute</b>.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="timeline">
+                        <li>
+                            <h4 id="timeline_date" class="float-left">Bachelor in Computer Application.</h4><br/><br/>
+                            <h6>2015 - 2018</h6>
+                            <p>Obtained 3 Year Bachelor in Computer Applications (<b>BCA</b>) degree from <b>Indira Gandhi National Open University.</b></b></p>
+                        </li>
+                        <li>
+                            <h4 id="timeline_date" class="float-left">Master in Computer Application.</h4><br/><br/>
+                            <h6>2018 - 2020</h6>
+                            <p>Obtained Masters in Computer Applications (<b>BCA</b>) degree from <b>Indira Gandhi National Open University</b> under 5-year integrated course along with BCA.</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ########################## END OF EDUCATION SECTION ######################## -->
+
+
+    <!-- ||||||||||||||||||||||| SKILL SECTION begins here ||||||||||||||||||||| -->
+    <div id="skills" class="skillsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 id="myskills_heading_text" >Skills</h2>
+                    <hr class="heading_underline" size="10" width="12%" color="#e74c3c">
+                    <br/>
+                </div>
+
+                <div class="col-md-6 text-center">
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading" style="color: #fff; margin-top: 10px;">Python Stack</h6>
+                    <hr style="background-color: blanchedalmond; width: 150px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 26px; width: 26px;" src="assets/img/python.png"> Python</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%; text-align:right; font-weight: bold; color: black;">70%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 26px; width: 24px;" src="assets/img/flask.png"> Flask</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%; text-align:right; font-weight: bold; color: black;">40%</div>
+                    </div><br/>
+
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">MERN Stack</h6>
+                    <hr style="background-color: blanchedalmond; width: 125px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 26px; width: 26px;" src="assets/img/mongo.png"> MongoDB</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 65%; text-align:right; font-weight: bold; color: black;">65%</div>
+                    </div><br/>
+
+                    <p class="skill_p">ExpressJs</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 55%; text-align:right; font-weight: bold; color: black;">55%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 26px; width: 40px;" src="assets/img/react.png"> React</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%; text-align:right; font-weight: bold; color: black;">20%</div>
+                    </div><br/>
+
+                    <p class="skill_p" title="NodeJs"><img style="height: 26px; width: 26px;" src="assets/img/node-js.png"> NodeJs</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 50%; text-align:right; font-weight: bold; color: black;">50%</div>
+                    </div><br/>
+
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">Markup Languages</h6>
+                    <hr style="background-color: blanchedalmond; width: 180px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 26px; width: 26px;" src="assets/img/html.png"> HTML</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 90%; text-align:right; font-weight: bold; color: black;">90%</div>
+                    </div><br/>
+  
+                    <p class="skill_p"><img style="height: 20px; width: 30px;" src="assets/img/css.png"> CSS</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 40%; text-align:right; font-weight: bold; color: black;">40%</div>
+                    </div><br/>
+
+                    
+                    
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">Other programming Languages</h6>
+                    <hr style="background-color: blanchedalmond; width: 225px;">
+
+                    <p class="skill_p"><img style="height: 25px; width: 25px;" src="assets/img/c.png"> C programming language</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 88%; text-align:right; font-weight: bold; color: black;">88%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 25px; width: 25px;" src="assets/img/cpp.png"> C++ programming language</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%; text-align:right; font-weight: bold; color: black;">75%</div>
+                    </div><br/>
+
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">Platforms</h6>
+                    <hr style="background-color: blanchedalmond; width: 100px; margin-bottom: 10px;">
+                    
+                    <p class="skill_p"><img style="height: 20px; width: 20px;" src="assets/img/heroku.png"> Heroku</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 54%; text-align:right; font-weight: bold; color: black;">54%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 25px; width: 25px;" src="assets/img/postman.png"> Postman</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 10%; text-align:right; font-weight: bold; color: black;">10%</div>
+                    </div><br/>
+
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">DevOps</h6>
+                    <hr style="background-color: blanchedalmond; width: 100px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 20px; width: 20px;" src="assets/img/Git.png"> Git</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 87%; text-align:right; font-weight: bold; color: black;">87%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 25px; width: 25px;" src="assets/img/github.png"> GitHub</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 82%; text-align:right; font-weight: bold; color: black;">82%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 15px; width: 25px;" src="assets/img/docker.png"> Docker</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 12%; text-align:right; font-weight: bold; color: black;">12%</div>
+                    </div><br/>
+
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">SQL Databases</h6>
+                    <hr style="background-color: blanchedalmond; width: 100px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 35px; width: 35px;" src="assets/img/mysql.png"> MySQL</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 54%; text-align:right; font-weight: bold; color: black;">54%</div>
+                    </div><br/>
+
+                    <p class="skill_p"><img style="height: 25px; width: 25px;" src="assets/img/mss.png"> Microsoft SQL Server</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 55%; text-align:right; font-weight: bold; color: black;">55%</div>
+                    </div><br/>
+
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">Other Scripting Languages</h6>
+                    <hr style="background-color: blanchedalmond; width: 170px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 20px; width: 20px;" src="assets/img/JavaScript.png"> Javascript</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 49%; text-align:right; font-weight: bold; color: black;">49%</div>
+                    </div><br/>
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
+                    <h6 class="skill_language_heading">Other Frameworks</h6>
+                    <hr style="background-color: blanchedalmond; width: 100px; margin-bottom: 10px;">
+
+                    <p class="skill_p"><img style="height: 25px; width: 25px;" src="assets/img/bootstrap.png"> Bootstrap</p> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 60%; text-align:right; font-weight: bold; color: black;">60%</div>
+                    </div><br/>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- ########################## END OF SKILLS SECTION ######################## -->
+
+
+    <!-- ||||||||||||||||||||||| CONTACT SECTION begins here ||||||||||||||||||||| -->
+
+    <div id="contact" class="contactSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="about_header">Contact</h1>
+                    <hr class="heading_underline" size="10" width="12%" color="#e74c3c">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 id="h2_above_above_button">I'd love to hear from you!</h2>
+                    <h3 id="h3_email">mail@rishavsingh.dev</h3>
+                    <a style="margin-bottom: 50px;" href="mailTo:mail@rishavsingh.dev" class="contactButton"><i style="margin-right: 5px;" class="fa fa-envelope-o" aria-hidden="true"></i> Send Email</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h5 id="h5_above_social_links">Follow me around the web <i style="margin-left: 6px;" class="fa fa-globe" aria-hidden="true"></i></h5>
+                    <div id="social" >
+                        <div id="container" >
+                            <ul class="list-inline mx-auto justify-content-center">
+                                <li>
+                                    <a href="https://github.com/RishavSinghh" title="github" target="_blank">
+                                        <i id="contact_section_social_media_icon" class="fa fa-github"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/rishavsingh0912/" title="linkedin" target="_blank">
+                                        <i id="contact_section_social_media_icon" class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://twitter.com/rishavsinghh9" title="twitter" target="_blank">
+                                        <i id="contact_section_social_media_icon" class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ########################## END OF CONTACT SECTION ####################### -->
+
+
+
+    <!-- ||||||||||||||||||||||| TOP Button SECTION begins here ||||||||||||||||||||| -->
+
+    <!-- Add a go to top button here. -->
+
+    <!-- ########################## END OF TOP Button SECTION ####################### -->
+
+
+
+    <!-- ====================== FOOTER begins here ====================== -->
+    
+    <footer class="footer section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p id="p_under_footer_1"><span style="font-size: 25px; margin-right: 3px;">🛠</span> Created by Rishav Singh</p>
+                    <p id="p_under_footer_3"><i style="font-size: 22px; margin-right: 5px;" class="fa fa-map-marker" aria-hidden="true"></i> Kolkata, <b>India (<b>Bharat</b>)</b> <span>🇮🇳</span></p>
+                    <p id="p_under_footer_2"><a id="privacy_policy_link" target="_blank" href="privacy-policy.html">Privacy Policy</a> &#183; Copyright © 2021 Rishav Singh &#183; All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====================== FOOTER ends here ====================== -->
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
-
 </html>

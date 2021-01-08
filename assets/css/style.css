@@ -1,0 +1,769 @@
+/* ------------------------------------------------------------------------------ */
+/* CSS for the NAVIGATION BAR begins here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ===== CSS for Brand Logo ======== */
+#brand_logo{
+  margin-top: 0px; 
+  margin-bottom: 0; 
+  margin-right: 0; 
+  margin-left: 0px; 
+  float:right;
+}
+
+#img_under_brand_logo{
+  height: 50px; 
+  width: 50px;
+  filter: drop-shadow(6px 6px 6px #222);
+}
+
+#img_under_brand_logo:hover{
+  height: 60px; 
+  width: 60px;
+  filter: drop-shadow(6px 6px 6px #222);
+}
+/* ===== CSS for Brand Logo ======== */
+
+
+/* CSS to add shadow to the navbar */
+.navbar {
+  -webkit-box-shadow: 0 8px 6px -6px #222; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 8px 6px -6px #222; /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 9px 6px -6px #222; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+/* CSS to add shadow to the navbar */
+
+#navigation {
+  background-color: #242d40;
+  padding: 10px 10px;
+  z-index: 10;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+#navigation li {
+  padding: 0 8px;
+  /* 0 padding top and bottom and 10px left and right. */
+  /* CSS for each and every items on the navbar. */
+}
+
+#navigation li a {
+  color: #ffffff;
+  font-size: 20px;
+  /* CSS for white color of all the items. */
+  /* All the items are links so we targeted all the links henceforth.*/
+}
+
+#navigation li a:hover{
+  border-bottom: 2px solid #e74c3c;
+  margin-top: 0px;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  font-style: bold;
+  letter-spacing: 3px;
+  margin-left: 15px;
+}
+
+.navbar-toggler-icon {
+  background: url(../img/icons/menu.png);
+  background-size: 100%;
+}
+
+/* CSS for icons */
+
+#my-font-awesome-icon{
+  font-size: 19px;
+  margin-right: 3px;
+  color: #e74c3c;
+}
+
+#my-font-awesome-icon-phone{
+  font-size: 20px;
+  margin-right: 6px;
+  color: #e74c3c;
+}
+
+#my-font-awesome-icon-wrench{
+  font-size: 19px;
+  margin-right: 5px;
+  color: #e74c3c;
+}
+
+#my-font-awesome-icon-pencil{
+  margin-right: 5px;
+  color: #e74c3c;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the NAVIGATION BAR ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the INTRODUCTION SECTION begins here. */
+/* ------------------------------------------------------------------------------ */
+#introduction{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.introimage {
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+#emoji_id {
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  filter: drop-shadow(12px 12px 12px #222);
+}
+
+#introduction_header {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 91px;
+  line-height: 1;
+  margin-top: 22px;
+  letter-spacing: 40px;
+}
+
+#introduction_h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 30px;
+  font-style: bold;
+}
+
+#introduction_h2_span {
+  color: #e74c3c;
+}
+
+#introduction_welcome_message {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 2;
+  margin-top: 50px;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the INTRODUCTION ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* Default CSS for the BODY begins here. */
+/* ------------------------------------------------------------------------------ */
+body {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #1b2936; /* Twitter Dark-Mode Color Coding Scheme. */
+  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  position: relative;
+}
+/* ------------------------------------------------------------------------------ */
+/* Default CSS for the BODY ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the ABOUT SECTION begins here. */
+/* ------------------------------------------------------------------------------ */
+.section {
+  padding: 40px 0;
+  /* CSS for each section. Will make its width full section towards the sides. */
+  /* Change this to increase or decrease space in between the sections */
+}
+
+.about{
+  padding-top: 0px;
+}
+
+.aboutImage {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  /* Makes the about section image stick to the size of the bootstrap column. */
+}
+#intro_subtitle {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.about_header {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-top: 70px;
+  font-size: 50px;
+}
+
+.heading_underline {
+  margin-bottom: 50px;
+  height: 2px;
+}
+
+#h1_under_about_section{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+  font-size: 35px;
+  line-height: 1;
+  margin-top: 30px;
+}
+
+.paragraph_under_about{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+/* ------------------------------------------------------------------------------ */
+/* CSS for the ABOUT SECTION ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the SKILLS SECTION begins here. */
+/* ------------------------------------------------------------------------------ */
+.skillsSection {
+  background-color: #1b2936; /*Twitter Dark-Mode Color Coding Scheme.*/
+  color: #ffffff;
+}
+
+#myskills_heading_text{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-top: 60px;
+  font-size: 50px;
+}
+
+.skill_p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  margin-bottom: 4px;
+  margin-left: 6px;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.skill_container {
+  background-color: gray;
+  width: 100%;
+  border-radius: 15px;
+}
+.language {
+  background-color: #fff;
+  color: #000000;
+  padding: 1px;
+  text-align: right;
+  font-size: 12px;
+  border-radius: 15px;
+}
+
+.skill_language_heading{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  color: #fff; 
+  margin-top: 10px;
+}
+/* ------------------------------------------------------------------------------ */
+/* CSS for the SKILLS SECTION ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the EDUCATION SECTION begins here. */
+/* ------------------------------------------------------------------------------ */
+
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  z-index: 9;
+}
+ul.timeline:before {
+  content: ' ';
+  background: #e74c3c; /* Color of the horizontal line.  */
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #e74c3c; /* Color of the circle outline.  */
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+#timeline_date{
+  text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: bolder;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the EDUCATION SECTION ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* ------------------------------------------------------------------------------ */
+/* CSS for the CONTACT SECTION begins here. */
+/* ------------------------------------------------------------------------------ */
+
+#contact{
+  margin-bottom: 10px;
+}
+
+.contactSection {
+  background-color: #1b2936; /*Twitter Dark-Mode Color Coding Scheme.*/
+  color: #ffffff;
+}
+
+.contactButton {
+  color: #fff;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #e74c3c;
+  background-color: #1b2936;
+}
+
+#h5_above_social_links{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 2;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+#h2_above_above_button{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  line-height: 2;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+#h3_email{
+  font-family: "Josefin Sans", sans-serif;
+  font-style: bold;
+  letter-spacing: 0em;
+}
+
+/* CSS for social media links. */
+#social #container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#social #container ul li{
+  float: left; /* to make the items float from left to right. */
+  list-style-type: none; /* to remove any styles */
+
+  /* ........ making list items round ....... */
+  height: 50px;
+  width: 50px;
+  background-color: #1b2936;
+  border-radius: 50px;
+  text-align: center;
+  /* ........ making list items round ....... */
+
+  /* ........ to bring icons in center ....... */
+  line-height: 65px;
+  /* ........ to bring icons in center ....... */
+
+  /* ........ increasing space between the circles ....... */
+  margin: 12px;
+  /* ........ increasing space between the circles ....... */
+
+  box-shadow: 1px 4px 2px 2px #222;
+}
+
+#contact_section_social_media_icon{
+  /* CSS only for the icons inside the circle. */
+  font-size: 35px;
+  color: #ffffff;
+
+  /* equal space inside the circle. */
+  margin-left: 4px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+#contact_section_social_media_icon:hover{
+  color: #e74c3c;
+  font-size: 38px;
+}
+/* ------------------------------------------------------------------------------ */
+/* CSS for the CONTACT SECTION ends here. */
+/* ------------------------------------------------------------------------------ */
+
+/* =============================================================================== */
+/* CSS for the FOOTER BEGINS here. */
+/* =============================================================================== */
+
+.footer {
+  background-color: #242d40;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+#p_under_footer_1{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 19px;
+  font-style: bolder;
+  text-align: center;
+}
+
+#p_under_footer_3{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  font-style: bolder;
+  text-align: center;
+}
+
+#p_under_footer_2{
+  font-size: 12px;
+}
+
+#privacy_policy_link{
+  text-decoration: none; 
+  color: #ffff;
+}
+
+#privacy_policy_link:hover{
+  border-bottom: 1px solid #e74c3c;
+}
+
+/* =============================================================================== */
+/* CSS for the FOOTER ENDS here. */
+/* =============================================================================== */
+
+
+
+/*  */
+
+
+
+/* ------------------------------------------------------------------------------ */
+/* CSS MEDIA QUERIES begins here. */
+/* ------------------------------------------------------------------------------ */
+
+/* =================== CSS Media Query for iPad (Portrait & Landscape) ========== */
+
+@media screen and (min-width : 768px) and (max-width : 1024px) and (-webkit-min-device-pixel-ratio : 1){
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* =================== CSS Media Query for iPad Pro (Portrait & Landscape) ========== */
+
+@media screen and (min-width : 1024px) and (max-width : 1366px) and (-webkit-min-device-pixel-ratio : 1){
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 130px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* ============= CSS Media Query for HDTV 1080p (Portrait & Landscape) ========== */
+
+@media screen and (min-width : 1920px) and (orientation : landscape){
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* ======================= CSS Media Query Desktops and laptops ================= */
+
+@media screen  and (min-width : 1224px) {
+  /* Since there is no orientation here */
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* ==================== CSS Media Query for Larger Screens ================== */
+@media screen  and (min-width : 1824px) {
+  /* Since there is no orientation here */
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 37px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* ============================== CSS Media Query for iPhones ========================= */
+
+/* =================== CSS Media Query for iPhone 5, SE (Landscape) ========== */
+@media screen and (min-width: 320px) and (max-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 76px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* =================== CSS Media Query for iPhone 5, SE(1st Gen) (Portrait) ========== */
+@media screen and (min-width: 320px) and (max-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 39px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* =================== CSS Media Query for iPhone 6, 6S, 7, 8, SE(2nd Gen) (Portrait) ========== */
+@media screen and (min-width: 375px) and (max-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 47px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* =================== CSS Media Query for iPhone 6, 6S, 7, 8, SE(2nd Gen) (landscape) ========== */
+@media screen and (min-width: 375px) and (max-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 74px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+
+/* =================== CSS Media Query for iPhone 6+, 6S+, 7+, 8+ (Portrait) ========== */
+@media screen and (min-width: 414px) and (max-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 52px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* =================== CSS Media Query for iPhone 6+, 6S+, 7+, 8+(landscape) ========== */
+@media screen and (min-width: 414px) and (max-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 74px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 29px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* =================== CSS Media Query for iPhone X, XS (portrait) ========== */
+@media screen and (min-width: 375px) and (max-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1){
+  /* Styles */
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 47px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+/* ======================================================================================= */
+
+/* =================== CSS Media Query for Small Tablet Devices (portrait) ========== */
+@media screen and (min-width : 600px) and (max-width : 800px) and (-webkit-min-device-pixel-ratio : 1){
+  #introduction_header {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+
+  #introduction_h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-style: bold;
+  }
+}
+
+/* ------------------------------------------------------------------------------ */
+/* CSS MEDIA QUERIES ends here. */
+/* ------------------------------------------------------------------------------ */
