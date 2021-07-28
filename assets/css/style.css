@@ -387,6 +387,15 @@ ul.timeline > li:before {
   letter-spacing: 0em;
 }
 
+.h5_above_social_links{
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 2;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
 #h2_above_above_button{
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
