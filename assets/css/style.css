@@ -102,9 +102,11 @@
   color: #e74c3c;
 }
 
-#my-font-awesome-icon-git{
+#my-font-awesome-icon-project{
   margin-right: 7px;
   color: #e74c3c;
+  font-weight: 200;
+  font-style: inherit;
 }
 
 /* ------------------------------------------------------------------------------ */
