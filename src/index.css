@@ -1,0 +1,84 @@
+/**
+ * @file index.css
+ * @description Global stylesheet configuration, CSS variable definitions (Theme & Colors), and utility patterns.
+ * // SEARCH_TAGS: Styles, Theme, CSS, Variables, Fonts, Patterns
+ */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Figtree", sans-serif;
+  --font-satoshi: "Satoshi", sans-serif;
+  
+  --color-accent: #FF7722;
+  --color-accent-hover: #e8891e;
+  --color-accent-muted: rgba(255, 119, 34, 0.1);
+  --color-accent-soft: #FFB07C;
+}
+
+/* --- Theme Variables --- */
+/* MAINTAINABILITY: These variables map to data-theme attributes. Modifying these alters global color palette instantly. */
+:root {
+  --bg: #F9F7F2;
+  --surface: #FDFBF6;
+  --surface2: #F2EFE8;
+  --footer-bg: #F2EFE8;
+  --text-primary: #1c1c2e;
+  --text-muted: #65657a;
+  --border-color: #e6e2d8;
+  --nav-bg: rgba(249, 247, 242, 0.98);
+}
+
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --surface2: #1c2333;
+  --footer-bg: #05060A; /* A very deep, rich black-blue tone */
+  --text-primary: #e6edf3;
+  --text-muted: #8b949e;
+  --border-color: #2d333b;
+  --nav-bg: rgba(13, 17, 23, 0.98);
+}
+
+@layer base {
+  /* Local font setup (Prepare these files in /public/fonts/) */
+  /*
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Variable.woff2') format('woff2');
+    font-weight: 300 900;
+    font-display: swap;
+  }
+  */
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-[var(--bg)] text-[var(--text-primary)] transition-colors duration-300;
+  }
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+[data-theme="dark"] .bg-dot-pattern {
+  background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, var(--border-color) 1px, transparent 1px), linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px);
+}
+
+.markdown-body {
+  @apply font-sans;
+}
