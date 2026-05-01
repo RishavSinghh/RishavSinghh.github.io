@@ -15,7 +15,8 @@ export const Skills: React.FC = () => {
         <div className="flex flex-col gap-10">
           {[{ cat: 'Backend', skills: ['Node.js', 'Express.js', 'Flask', 'Python', 'REST APIs'] },
             { cat: 'Frontend', skills: ['React JS', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'] },
-            { cat: 'Databases', skills: ['MongoDB', 'MySQL', 'MS SQL Server'] }].map((item, idx) => (
+            { cat: 'Databases', skills: ['MongoDB', 'MySQL', 'MS SQL Server'] },
+            { cat: 'Tools & DevOps', skills: ['Git', 'GitHub', 'Docker', 'Postman', 'Vercel'] }].map((item, idx) => (
             <motion.div 
               key={item.cat}
               initial={{ opacity: 0, x: -20 }}

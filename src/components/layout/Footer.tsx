@@ -73,8 +73,10 @@ export const Footer: React.FC<FooterProps> = ({ isDark, smoothScroll }) => {
           </div>
         </div>
       </div>
-      <div className="relative border-t border-[var(--border-color)] py-6 px-[5%] text-center z-10">
-        <p className="text-[var(--text-muted)] text-xs">© 2026 Rishav Singh. All rights reserved.</p>
+      <div className="relative border-t border-[var(--border-color)] py-8 px-[5%] text-center z-10">
+        <p className="text-[var(--text-muted)] text-[10px] md:text-xs tracking-wide leading-relaxed">
+          Designed & developed in India, that is भारत 🇮🇳 · © 2026 RISHAV SINGH · सर्वाधिकार सुरक्षित · All rights reserved.
+        </p>
       </div>
     </footer>
   );

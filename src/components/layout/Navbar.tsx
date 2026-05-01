@@ -112,7 +112,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             ))}
             
             <div className="mt-auto pt-8">
-              <p className="text-xs text-[var(--text-muted)] text-center">© 2026 Rishav Singh</p>
+              <p className="text-[10px] text-[var(--text-muted)] text-center leading-relaxed">
+                Designed & developed in India, that is भारत 🇮🇳<br />
+                © 2026 RISHAV SINGH · सर्वाधिकार सुरक्षित
+              </p>
             </div>
           </motion.div>
         )}

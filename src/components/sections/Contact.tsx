@@ -22,7 +22,7 @@ export const Contact: React.FC = () => {
         >
           <p className="text-[var(--text-muted)] text-base leading-relaxed mb-10">I'd love to hear from you! Whether it's a project, job opportunity, or just a friendly chat — my inbox is always open.</p>
           <a 
-            href="mailto:mail@rishavsingh@protonmail.com" 
+            href="mailto:rishavsingh@protonmail.com" 
             className="flex items-center gap-3 bg-accent text-black px-9 py-4 rounded-2xl font-heading font-medium text-lg shadow-[0_6px_24px_rgba(255,119,34,0.2)] transition-all duration-300 hover:bg-[#e8891e] hover:translate-y-[-3px] mb-12"
           >
             <Mail size={22} />
