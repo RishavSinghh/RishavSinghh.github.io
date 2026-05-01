@@ -1,76 +1,95 @@
-# Rishav's Portfolio Website
+# Rishav Singh - Professional Portfolio
 
-Welcome to the source code for Rishav Singh's professional portfolio. This project is a modern, high-performance web application built with **React**, **Vite**, and **TypeScript**.
+A high-performance, modern, and fully responsive portfolio website built with a backend-focused mindset using the **MERN Stack** (specifically the frontend portion here). This project emphasizes clean architecture, maintainability, and smooth user experience.
 
-## 🚀 Technologies Used
+## 🌟 Overview
 
-- **React 18**: A JavaScript library for building user interfaces.
-- **Vite**: A lightning-fast frontend build tool.
-- **TypeScript**: A typed superset of JavaScript that helps catch errors early.
-- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
-- **Motion (framer-motion)**: For smooth, production-ready animations.
-- **Lucide React**: For beautiful, consistent iconography.
+This portfolio showcases the skills, education, projects, and certifications of Rishav Singh. It features a sleek dark/light theme system, fluid animations using `motion/react`, and a modular component structure that makes it extremely easy to maintain and scale.
 
----
+## 🚀 Key Features
 
-## 🛠️ Local Setup Instructions
+- **🌓 Dynamic Theme Engine**: Seamlessly switch between Dark and Light modes with a custom-engineered toggle that remembers user preference.
+- **📱 True Responsive Design**: Optimized for everything from ultra-wide desktops to the smallest mobile devices.
+- **✨ Fluid Motion**: Powered by `motion/react` for elegant section entrances, hover effects, and smooth layout transitions.
+- **📑 Modular Architecture**: The project is split into reusable UI components (`/ui`), layout wrappers (`/layout`), and feature-specific sections (`/sections`).
+- **🔍 Global Search Optimized**: Every file contains standardized comment blocks with `SEARCH_TAGS`, allowing developers to navigate the codebase instantly using global search.
+- **📜 Smooth Scroll Navigation**: Custom implementation of an ease-in-out cubic scroll for a premium "single-page application" feel.
+- **🛡️ Copy Protection**: Dedicated shield layers and right-click prevention on sensitive assets like certifications.
 
-If you are new to web development, follow these steps to get the project running on your computer.
+## 🛠️ Tech Stack
 
-### 1. Prerequisites
-
-Before you begin, make sure you have the following installed:
-- **Node.js**: [Download and install Node.js](https://nodejs.org/) (Recommended version: 18 or higher).
-- **A Code Editor**: I recommend [Visual Studio Code](https://code.visualstudio.com/).
-
-### 2. Download the Code
-
-You can either download the ZIP file from the repository and extract it, or use Git to clone it:
-
-```bash
-# If using Git
-git clone <your-repository-url>
-cd <repository-folder-name>
-```
-
-### 3. Install Dependencies
-
-Open your terminal (or Command Prompt) in the project folder and run the following command to install all the necessary libraries:
-
-```bash
-npm install
-```
-
-### 4. Run the Development Server
-
-Once the installation is complete, start the local development server:
-
-```bash
-npm run dev
-```
-
-Your terminal will show a link (usually `http://localhost:3000` or `http://localhost:5173`). Open this link in your browser to see your website!
+- **Frontend**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS (Utility-first approach)
+- **Animations**: Motion (formerly Framer Motion)
+- **Icons**: Lucide React
+- **Typography**: Figtree (Sans) and Satoshi (Display)
 
 ---
 
 ## 📂 Project Structure
 
-- `src/`: Contains the source code of the application.
-  - `App.tsx`: The main component where most of the UI logic resides.
-  - `main.tsx`: The entry point that connects React to the HTML page.
-  - `index.css`: Global styles and Tailwind CSS configurations.
-- `public/`: Static assets like images and icons (e.g., your logo and avatar).
-- `package.json`: Contains the list of libraries and scripts used in the project.
-- `tsconfig.json`: Configuration for TypeScript.
+The project follows a "Sections & Components" pattern for maximum clarity:
+
+```text
+src/
+├── components/
+│   ├── layout/         # Persistent wrappers (Navbar, Footer)
+│   ├── sections/       # Main page sections (Hero, About, Projects, etc.)
+│   └── ui/             # Reusable atomic UI elements (Cards, Modals, Buttons)
+├── App.tsx             # Root component & State Orchestrator
+├── main.tsx            # Application Entry Point
+├── index.css           # Global Styles & CSS Variable Definitions
+└── constants.ts        # (Optional) Hardcoded text and configurations
+```
 
 ---
 
-## 💡 How to Customize
+## 🔧 Maintainability & Global Search
 
-- **Change the Name/Text**: Open `src/App.tsx` and search for "Rishav Singh". You can update the text directly there.
-- **Update Colors**: Colors are managed via CSS variables in `src/index.css`. Look for the `:root` section to change the accent colors or background colors.
-- **Add Projects**: Locate the `projects` array or section in `src/App.tsx` to add your own work.
+This project is built for professional handoff. We use a **Standardized Commenting System**:
+
+- **@component**: Identifies the component name.
+- **@description**: Explains the purpose and logic.
+- **SEARCH_TAGS**: Keywords for global search (e.g., `// SEARCH_TAGS: Hero, Avatar, CTA`).
+- **MAINTAINABILITY**: Explicit tips on how to update or modify specific logic.
+
+**Try it in VS Code:** `Ctrl + Shift + F` and search for `@component` or a specific tag like `ThemeToggle`.
+
+---
+
+## 💻 Local Development
+
+### 1. Prerequisites
+- **Node.js** (v18+)
+- **npm** or **yarn**
+
+### 2. Setup
+```bash
+# Clone the repository
+git clone <repository-url>
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The app will be available at `http://localhost:3000`.
+
+---
+
+## 💡 Customization Guide
+
+- **Theme & Colors**: All branding colors are defined as CSS variables at the top of `src/index.css`. Modify `--color-accent` to change the primary brand color globally.
+- **Content**: Each section has its own file in `src/components/sections/`. Update the text, arrays, or icons there.
+- **Certifications**: Manage the list of credentials in `src/components/sections/Certifications.tsx`.
+
+---
 
 ## 📝 License
 
-This project is for personal portfolio use.
+This project is open for personal use. Attribution is appreciated!
+
+---
+*Built with ❤️ by Rishav Singh*
